@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="result-wrapper">
+
+            <div class="badge">Prediction Complete</div>
+
+            <h1>Ticket Routed Successfully</h1>
+
+            <div class="ticket-box">
+
+                <h3>Customer Ticket</h3>
+
+                <p>
+                    {{ ticket }}
+                </p>
+
+            </div>
+
+            <div class="prediction-box">
+
+                <span>Predicted Category</span>
+
+                <h2>{{ prediction }}</h2>
+
+            </div>
+
+            <div class="actions">
+
+                <a href="/predict" class="btn">
+                    Route Another Ticket
+                </a>
+
+                <a href="/" class="secondary-btn">
+                    Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+

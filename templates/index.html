@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Routing System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="hero">
+            <div class="badge">AI-Powered Support</div>
+
+            <h1>Ticket Routing System</h1>
+
+            <p>
+                Automatically classify customer support tickets
+                and route them to the appropriate department.
+            </p>
+
+            <a href="/predict" class="btn">
+                Route a Ticket
+            </a>
+        </header>
+
+        <section class="features">
+
+            <div class="card">
+                <div class="icon">01</div>
+                <h2>Enter Ticket</h2>
+                <p>
+                    Submit the customer's support request as text.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">02</div>
+                <h2>AI Classification</h2>
+                <p>
+                    TF-IDF transforms the text and the ML model
+                    predicts the ticket category.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">03</div>
+                <h2>Smart Routing</h2>
+                <p>
+                    The ticket is automatically routed to the
+                    predicted support category.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Ticket Routing System • Machine Learning Project</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
